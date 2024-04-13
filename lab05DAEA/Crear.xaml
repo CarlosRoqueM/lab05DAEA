@@ -1,0 +1,159 @@
+﻿<Window x:Class="lab05DAEA.Crear"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab05DAEA"
+        mc:Ignorable="d"
+        Title="Crear" Height="450" Width="800">
+    <Grid>
+        <Border Width="300"
+            Height="1000"
+            Background="White"
+            CornerRadius="6">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15"
+                              Direction ="-90" 
+                              RenderingBias ="Quality" 
+                              ShadowDepth ="2" 
+                              Color ="Gray" />
+            </Border.Effect>
+            <StackPanel Orientation="Vertical"
+                    Margin="20">
+                <TextBlock Text="Login" 
+                       FontSize="25"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Padding="10"
+                       />
+                <Grid VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label
+                   Grid.Row="0"
+                   Margin="0,15"
+                   HorizontalAlignment="Left">id</Label>
+                    <TextBox  
+                     x:Name="txtIdCliente"   
+                     Grid.Column="1"
+                  Grid.Row="1"
+                  Padding="0,5"
+                  Width="255"
+                  BorderThickness="0,0,0,1"
+                  HorizontalAlignment="Left"
+                  />
+                    <Label  
+                   Grid.Row="2"
+                   Margin="0,15"
+                   HorizontalAlignment="Left">Nombre Compañia</Label>
+                    <TextBox 
+                      x:Name="txtNombreCompañia"
+                      Grid.Row="3"
+                      Padding="0,5"                           
+                      Width="255"
+                      BorderThickness="0,0,0,1"
+                      HorizontalAlignment="Left"/>
+                    <Label  
+                        Grid.Row="4"
+                        Margin="0,15"
+                        HorizontalAlignment="Left">Nombre Contacto</Label>
+                     <TextBox 
+                           x:Name="txtNombreContacto"
+                           Grid.Row="5"
+                           Padding="0,5"                           
+                           Width="255"
+                           BorderThickness="0,0,0,1"
+                           HorizontalAlignment="Left"/>
+                    <Label  
+                        Grid.Row="6"
+                        Margin="0,15"
+                        HorizontalAlignment="Left">Cargo Contacto</Label>
+                    <TextBox 
+                           x:Name="txtCargoContaco"
+                           Grid.Row="7"
+                           Padding="0,5"                           
+                           Width="255"
+                           BorderThickness="0,0,0,1"
+                           HorizontalAlignment="Left"/>
+                    <Label  
+                        Grid.Row="8"
+                        Margin="0,15"
+                        HorizontalAlignment="Left">Direccion</Label>
+                    <TextBox 
+                           x:Name="txtDireccion"
+                           Grid.Row="9"
+                           Padding="0,5"                           
+                           Width="255"
+                           BorderThickness="0,0,0,1"
+                           HorizontalAlignment="Left"/>
+                    <Label  
+                        Grid.Row="10"
+                        Margin="0,15"
+                        HorizontalAlignment="Left">Ciudad</Label>
+                    <TextBox 
+                           x:Name="txtCiudad"
+                           Grid.Row="11"
+                           Padding="0,5"                           
+                           Width="255"
+                           BorderThickness="0,0,0,1"
+                           HorizontalAlignment="Left"/>
+                    <Label  
+                        Grid.Row="10"
+                        Margin="0,15"
+                        HorizontalAlignment="Left">Region</Label>
+                    <TextBox 
+                           x:Name="txtRegion"
+                           Grid.Row="11"
+                           Padding="0,5"                           
+                           Width="255"
+                           BorderThickness="0,0,0,1"
+                           HorizontalAlignment="Left"/>
+                    <Label  
+                        Grid.Row="12"
+                        Margin="0,15"
+                        HorizontalAlignment="Left">Codigo Postal</Label>
+                    <TextBox 
+                           x:Name="txtCodPosal"
+                           Grid.Row="13"
+                           Padding="0,5"                           
+                           Width="255"
+                           BorderThickness="0,0,0,1"
+                           HorizontalAlignment="Left"/>
+
+                </Grid>
+                <Button x:Name="GuardarBtn" 
+                    Content="Guardar" 
+                    Foreground="White"
+                    Background="Black"
+                    Margin="0,13"
+                    Height="35"
+                    Width="250" 
+                    >
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

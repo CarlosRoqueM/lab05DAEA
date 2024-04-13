@@ -1,0 +1,75 @@
+﻿<Window x:Class="lab05DAEA.Opciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab05DAEA"
+        mc:Ignorable="d"
+        Title="Opciones" Height="450" Width="800">
+    <Grid>
+        <Border Width="300"
+            Height="400"
+            Background="White"
+            CornerRadius="6">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15"
+                              Direction ="-90" 
+                              RenderingBias ="Quality" 
+                              ShadowDepth ="2" 
+                              Color ="Gray" />
+            </Border.Effect>
+            <StackPanel Orientation="Vertical"
+                    Margin="20">
+                <TextBlock Text="Selecciona" 
+                       FontSize="25"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Padding="10"
+                       />
+                <Grid VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button x:Name="InsertarBtn" 
+                        Grid.Row="0"
+                        Content="Insertar" 
+                        Foreground="White"
+                        Background="Black"
+                        Margin="0,13"
+                        Height="35"
+                        Width="250" Click="InsertarBtn_Click"   
+                        />
+
+                    <Button x:Name="ActualizarBtn" 
+                        Grid.Row="1"
+                        Content="Actualizar" 
+                        Foreground="White"
+                        Background="BlueViolet"
+                        Height="35"
+                        Width="250" 
+                    />
+                    <Button x:Name="EliminarBtn" 
+                        Grid.Row="2"
+                        Content="Borrar" 
+                        Foreground="Black"
+                        Background="SkyBlue"
+                        Height="35"
+                        Width="250" Margin="5,18,5,-17" Click="EliminarBtn_Click"   
+                    />
+                    <Button x:Name="ListarBtn" 
+                        Grid.Row="3"
+                        Content="Listar" 
+                        Foreground="Black"
+                        Background="RosyBrown"
+                        Height="35"
+                        Width="250" Margin="5,69,5,-68" Click="ListarBtn_Click"  
+                    />
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
