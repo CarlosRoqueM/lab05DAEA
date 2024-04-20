@@ -5,8 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab05DAEA"
         mc:Ignorable="d"
-        Title="Eliminar" Height="450" Width="800">
+        Title="Eliminar" Height="1200" Width="1300">
     <Grid>
+        <Border Width="1300"
+            Height="1200"
+            Background="White"
+            CornerRadius="6">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15"
+              Direction ="-90" 
+              RenderingBias ="Quality" 
+              ShadowDepth ="2" 
+              Color ="Gray" />
+            </Border.Effect>
+            <StackPanel Orientation="Vertical"
+                Margin="20">
+                   <TextBlock Text="Eliminar" 
+                   FontSize="25"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   FontWeight="Bold"
+                   Padding="10"
+                   />
+                <Grid VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                <DataGrid x:Name="Number04"
+                          Grid.Row="0"
+                          Height="800"
+                          Width="1210"/>
+
+                <Button x:Name="BtnBorrarCliente"
+                        Margin="8"
+                        Grid.Row="1"
+                        Content="ELiminar"
+                        Foreground="White"
+                        Background="Red"
+                        Height="35"
+                        Width="250" Click="BtnBorrarCliente_Click" 
+                        />
+                </Grid>
+            </StackPanel>
+            
+
+
+        </Border>
+
+        </Grid>
         
-    </Grid>
+    
 </Window>
